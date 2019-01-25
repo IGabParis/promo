@@ -1,0 +1,333 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', 'Lato';
+}
+
+.has-pattern-1{
+	background-image: url("../img/pattern-paper.png"), -moz-linear-gradient(70deg, #2471a3 35%, #1b4f72 65%);
+	background-image: url("../img/pattern-paper.png"), -webkit-linear-gradient(70deg, #2471a3 35%, #1b4f72 65%);
+	background-image: url("../img/pattern-paper.png"), -ms-linear-gradient(70deg, #2471a3 35%, #1b4f72 65%);
+	background-image: url("../img/pattern-paper.png"), linear-gradient(70deg, #2471a3 35%, #1b4f72 65%);
+}
+
+.has-pattern-1 h2{
+	color: #fff;
+	font-family: 'Raleway';
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+
+.has-pattern-2{
+	background-image: url("../img/pattern-1.png"), -moz-linear-gradient(70deg, #fff 35%, #f2f3f4 65%);
+	background-image: url("../img/pattern-1.png"), -webkit-linear-gradient(70deg, #fff 35%, #f2f3f4 65%);
+	background-image: url("../img/pattern-1.png"), -ms-linear-gradient(70deg, #fff 35%, #f2f3f4 65%);
+	background-image: url("../img/pattern-1.png"), linear-gradient(70deg, #fff 35%, #f2f3f4 65%);
+}
+
+.has-pattern-2 h2{
+	color: #1b4f72;
+	font-family: 'Raleway';
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+
+.iphone{
+	margin: 5% 0% 5% 5%;
+  	position: relative;
+  	width: 320px;
+  	height: 600px;
+  	background-repeat: no-repeat;
+  	background-position: center top;
+  	background-image: url('../img/iphone.png');
+}
+
+.iphone:before{
+	content: "";
+  	display: block;
+  	width: auto;
+  	height: 500px;
+  	background: url('../img/glow.png') no-repeat center top;
+  	right: -150px;
+  	top: 0;
+  	position: absolute;
+}
+
+.header{
+	background-color: #fff;
+	box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);
+}
+
+.header .container img{
+	width: 100%;
+	max-width: 40px;
+}
+
+.header .container a{
+	color: #1b4f72;
+}
+
+.header .container .logo-title {
+	font-family: 'Raleway';
+}
+
+.header .container a:hover{
+	text-transform: none;
+	text-decoration: none !important;
+	color: #000;
+	transition: all ease .5s
+}
+
+.navbar-nav>li>a{
+	line-height: 50px;
+}
+
+.promo{
+	color: #fff;
+}
+
+.promo .container{
+	margin-top: 4%;
+}
+
+.promo h1{
+	margin-top: 15%;
+}
+
+.promo .container .iphone img{
+	position: absolute;
+  	width: 260px;
+  	height: 453px;
+ 	left: 31px;
+  	top: 73px;
+}
+
+.promo .summary-demo{
+  width: 200px;
+  list-style: none;
+  font-size: 22px;
+  font-weight: 400;
+  padding-left: 30px;
+  transition: all ease .5s;
+}
+
+.promo .li-style-demo{
+  background-color: #fff !important;
+  border-radius: 20px;
+  color: #000 !important;
+  width: 100% !important;
+  min-width: 300px;
+  margin: 20px auto !important;
+  height: 40px !important;
+  padding: 15px 20px 55px 20px !important;
+}
+
+.promo .li-style-demo:after{
+    background-color: rgba(255,255,255,.7);
+    content: "";
+    height: 15px;
+    left: 250%;
+    margin-top: 20px;
+    border-radius: 0 60px 60px 0;
+    position: absolute;
+    width: 350px;
+    z-index: 1;
+    animation-name: Anim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Anim {
+    0%   {background-color: rgba(255,255,255,1);height: 15px;margin-top: 12px;left: calc(100% + 120px);}
+    25%  {background-color: rgba(255,255,255,.8);height: 10px;margin-top: 14px;left: calc(100% + 122px);}
+    50%  {background-color: rgba(255,255,255,.6);height: 7px;margin-top: 16px;left: calc(100% + 124px);}
+    75%  {background-color: rgba(255,255,255,.4);height: 3px;margin-top: 18px;left: calc(100% + 126px);}
+    100% {background-color: rgba(255,255,255,.2);height: 0px;margin-top: 20px;left: calc(100% + 128px);}
+}
+
+.steps{
+	color: #1b4f72;
+	margin-bottom: 5% 0;
+	padding: 5px 0 15px 0;
+}
+
+.steps .container{
+	padding: 10px;
+}
+
+.steps .point{
+	border: 2px solid #1b4f72;
+	box-shadow: 2px 1px 2px 1px rgba(0,0,0,.7);
+	padding: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.step-left{
+	border-radius: 20px 0 0 20px;
+}
+
+.step-center{
+	border-radius: 0px;
+}
+
+.step-right{
+	border-radius: 0 20px 20px 0;
+}
+
+.steps .step{
+	font-family: 'Raleway';
+	font-size: 32px;
+	border: 3px solid #1b4f72;
+	border-radius: 50%;
+	padding: 6px 0;
+	width: 20%;
+	margin: 10px auto;
+	text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+	box-shadow: 2px 1px 2px 1px rgba(0,0,0,.5) inset;
+}
+
+.steps .text{
+	font-family: 'Raleway';
+	font-size: 20px;
+	margin: 10px auto;
+}
+
+.testimonials .quote-box{
+	color: #1b4f72;
+	background-color: #f2f3f4;
+	margin: 1% auto 10% auto;
+	padding: 20px;
+	border: 1px solid #f2f3f4;
+	border-radius: 10px 0px 10px 0;
+}
+
+.testimonials .people p{
+	color: #fff !important;
+}
+
+.testimonials .people{
+	margin: 10px auto;
+	text-align: center;
+}
+
+.testimonials .people .fa{
+	color: #fff;
+	text-shadow: 2px 2px 2px rgba(255,255,255,.6);
+}
+
+.company img{
+	width: 100%;
+	max-width: 150px;
+}
+
+footer, footer a{
+	color: #fff;
+}
+
+footer .modal{
+	color: #1b4f72;
+}
+
+footer a:hover{
+	color: #f2f3f4;
+}
+
+.faq .container{
+	margin: 5% auto 0 auto !important;
+	padding: 0 0 50px 0;
+}
+
+.faq .container h2{
+	padding: 20px 0 10px 0;
+	margin: 6% auto 2% auto !important;
+}
+
+.contact{
+	margin: 5% auto 0 auto !important;
+	padding: 0 0 50px 0;
+}
+
+.contact .container h2{
+	padding: 20px 0 10px 0;
+	margin: 6% auto 2% auto !important;
+}
+
+.contact form{
+	border-radius: 20px;
+	box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);
+	padding: 5px;
+	color: #fff;
+	margin: auto;
+	height: 100%;
+	min-height: 300px;;
+}
+
+.contact .form-envelope .btn-class{
+	margin: 5px 5%;
+	padding: 5px 50px;
+	width: 90%;
+	min-width: 200px;
+	max-width: 500px;
+}
+
+.contact .fa{
+	color: #1b4f72;
+}
+
+@media (max-width: 991.99px) and (min-width: 767.99px){
+	.iphone{
+		margin: 70px 30% 25px 30%;
+	}
+	.li-style-demo{
+		padding: 15px 5px 55px 5px !important;
+		margin: 20px 0;
+	}
+	.promo .summary-demo{
+		width: 100%;
+		margin-left: 70px 35% 25px 20%;
+	}
+	.li-style-demo:after{
+    	display: none
+	}
+
+	.contact form{
+		min-height: 460px;
+	}
+
+	.contact .form-envelope .btn-class{
+		min-width: 350px;
+	}
+}
+
+@media (max-width: 767.98px){
+	.iphone{
+		margin: 70px auto 25px auto;
+	}
+	.iphone h4{
+		display: none;
+	}
+	.li-style-demo:after{
+    	display: none
+	}
+	.li-style-demo{
+  		display: none;
+	}
+	.promo .container{
+		margin-top: 10%;
+	}
+	.faq .container{
+		margin: 10% auto 0 auto !important;
+	}
+	.contact .container{
+		margin: 10% auto 0 auto !important;
+	}
+	.contact form{
+		min-height: 460px;
+		width: 100%;
+	}
+
+	.contact .form-envelope .btn-class{
+		min-width: 160px;
+	}
+}
